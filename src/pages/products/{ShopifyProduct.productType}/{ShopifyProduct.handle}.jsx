@@ -30,7 +30,7 @@ const Product = ({ data: { product, suggestions } }) => {
     options,
     variants,
     variants: [initialVariant],
-    priceRangeV2,
+    priceRange,
     title,
     description,
     images,
@@ -52,7 +52,7 @@ const Product = ({ data: { product, suggestions } }) => {
     (productId) => {
       client.product.fetch(productId).then((fetchedProduct) => {
         const result = fetchedProduct.variants.filter(
-          (variant) => variant.id === productVariant.storefrontId
+          (variant) => variant.id === productVariant.id
         )
 
         if (result.length > 0) {
@@ -60,7 +60,7 @@ const Product = ({ data: { product, suggestions } }) => {
         }
       })
     },
-    [productVariant.storefrontId, client.product]
+    [productVariant.id, client.product]
   )
 
   const handleOptionChange = (index, event) => {
@@ -85,11 +85,11 @@ const Product = ({ data: { product, suggestions } }) => {
   }
 
   React.useEffect(() => {
-    checkAvailablity(product.storefrontId)
-  }, [productVariant.storefrontId, checkAvailablity, product.storefrontId])
+    checkAvailablity(product.id)
+  }, [productVariant.id, checkAvailablity, product.id])
 
   const price = formatPrice(
-    priceRangeV2.minVariantPrice.currencyCode,
+    priceRange.minVariantPrice.currencyCode,
     variant.price
   )
 
@@ -185,7 +185,7 @@ const Product = ({ data: { product, suggestions } }) => {
                   )}
                   <AddToCart
                     type="submit"
-                    variantId={productVariant.storefrontId}
+                    variantId={productVariant.id}
                     quantity={quantity}
                     available={available}
                     alignSelf="flex-end"
@@ -232,11 +232,7 @@ const Product = ({ data: { product, suggestions } }) => {
                         >
                           <GatsbyImage
                             objectFit="contain"
-                            alt={
-                              image.altText
-                                ? image.altText
-                                : `Product Image of ${title} #${index + 1}`
-                            }
+                            alt={`Product Image of ${title} #${index + 1}`}
                             image={
                               image.localFile.childImageSharp.gatsbyImageData
                             }
@@ -294,7 +290,7 @@ export const query = graphql`
     product: shopifyProduct(id: { eq: $id }) {
       title
       description
-      priceRangeV2 {
+      priceRange {
         maxVariantPrice {
           amount
           currencyCode
@@ -304,9 +300,8 @@ export const query = graphql`
           currencyCode
         }
       }
-      storefrontId
+      id
       images {
-        altText
         localFile {
           publicURL
           childImageSharp {
@@ -321,7 +316,7 @@ export const query = graphql`
       }
       variants {
         availableForSale
-        storefrontId
+        id
         title
         price
         selectedOptions {

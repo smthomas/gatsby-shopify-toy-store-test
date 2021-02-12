@@ -9,7 +9,7 @@ import { ChakraHelpersContext } from '../context/chakra-helpers-context'
 const ProductCard = ({ product }) => {
   const {
     title,
-    priceRangeV2,
+    priceRange,
     slug,
     images: [firstImage],
   } = product
@@ -23,8 +23,8 @@ const ProductCard = ({ product }) => {
   const linkColor = useColorModeValue(`cardLink`, `dark.cardLink`)
 
   const price = formatPrice(
-    priceRangeV2.minVariantPrice.currencyCode,
-    priceRangeV2.minVariantPrice.amount
+    priceRange.minVariantPrice.currencyCode,
+    priceRange.minVariantPrice.amount
   )
 
   return (
@@ -86,7 +86,7 @@ export const query = graphql`
         }
       }
     }
-    priceRangeV2 {
+    priceRange {
       minVariantPrice {
         amount
         currencyCode
