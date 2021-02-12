@@ -109,11 +109,7 @@ const Product = ({ data: { product, suggestions } }) => {
 
   return (
     <Layout>
-      <SEO
-        title={title}
-        description={description}
-        image={firstImage.localFile.publicURL}
-      />
+      <SEO title={title} description={description} image={firstImage.src} />
       <Box bgGradient={bgGradient}>
         <Container py={[16, 20, 28]}>
           <Grid
@@ -232,14 +228,8 @@ const Product = ({ data: { product, suggestions } }) => {
                         >
                           <GatsbyImage
                             objectFit="contain"
-                            alt={
-                              image.altText
-                                ? image.altText
-                                : `Product Image of ${title} #${index + 1}`
-                            }
-                            image={
-                              image.localFile.childImageSharp.gatsbyImageData
-                            }
+                            alt={`Product Image of ${title} #${index + 1}`}
+                            image={image.gatsbyImageData}
                           />
                         </Box>
                       ))}
@@ -306,18 +296,8 @@ export const query = graphql`
       }
       storefrontId
       images {
-        altText
-        localFile {
-          publicURL
-          childImageSharp {
-            gatsbyImageData(
-              formats: [AUTO, WEBP, AVIF]
-              quality: 90
-              layout: CONSTRAINED
-              width: 640
-            )
-          }
-        }
+        src
+        gatsbyImageData(layout: CONSTRAINED, width: 640)
       }
       variants {
         availableForSale
