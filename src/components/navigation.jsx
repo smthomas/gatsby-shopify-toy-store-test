@@ -6,7 +6,7 @@ import Link from './link'
 const navigationLinks = [
   {
     name: 'All toys',
-    slug: '/products/',
+    slug: '/products/toys',
     pActive: false,
   },
 ]
