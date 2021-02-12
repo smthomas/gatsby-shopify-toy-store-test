@@ -37,20 +37,18 @@ const IndexPage = () => {
               justifyContent="center"
             >
               <Heading as="h1" color={headingColor}>
-                Welcome to Hexagon Store!
+                Welcome to the toy Store!
               </Heading>
               <Spacer axis="vertical" size={3} />
-              <Text fontSize="21px">
-                Your place for neat stickers & shirts.
-              </Text>
+              <Text fontSize="21px">Your place for neat children's toys.</Text>
               <Spacer axis="vertical" size={9} />
               <Button
                 as={GatsbyLink}
-                to="/products/"
+                to="/products/toys"
                 colorScheme={primaryColorScheme}
                 rightIcon={<ArrowIcon />}
               >
-                See all products
+                See all toys
               </Button>
             </Flex>
             <StaticImage
@@ -67,7 +65,7 @@ const IndexPage = () => {
       <Container my={[24, 32, 36, 40]}>
         <Flex alignItems="center" justifyContent="space-between" mb={8}>
           <Heading as="h2" fontSize="3xl">
-            Stickers
+            Best Sellers
           </Heading>
           <Button
             as={GatsbyLink}

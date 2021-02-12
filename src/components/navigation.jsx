@@ -5,19 +5,9 @@ import Link from './link'
 // In theory this could also be defined inside "gatsby-config.js" and then queried via GraphQL
 const navigationLinks = [
   {
-    name: 'All products',
+    name: 'All toys',
     slug: '/products/',
     pActive: false,
-  },
-  {
-    name: 'Shirts',
-    slug: '/products/shirt/',
-    pActive: true,
-  },
-  {
-    name: 'Stickers',
-    slug: '/products/stickers/',
-    pActive: true,
   },
 ]
 
