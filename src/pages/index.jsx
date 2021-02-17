@@ -37,7 +37,7 @@ const IndexPage = () => {
               justifyContent="center"
             >
               <Heading as="h1" color={headingColor}>
-                Welcome to the toy Store!
+                Welcome to the Toy Store!
               </Heading>
               <Spacer axis="vertical" size={3} />
               <Text fontSize="21px">Your place for neat children's toys.</Text>
