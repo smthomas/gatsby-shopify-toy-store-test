@@ -4376,7 +4376,7 @@ create-require@^1.1.0:
   resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
   integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
 
-cross-fetch@3.0.6, cross-fetch@^3.0.6:
+cross-fetch@3.0.6:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.0.6.tgz#3a4040bc8941e653e0e9cf17f29ebcd177d3365c"
   integrity sha512-KBPUbqgFjzWlVcURG+Svp9TlhA5uliYtiNx/0r8nv0pdypeQCRJ9IaSIc3q/x3q8t3F75cHuwxVql1HFGHCNJQ==
@@ -5840,7 +5840,7 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-extract-files@9.0.0, extract-files@^9.0.0:
+extract-files@9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/extract-files/-/extract-files-9.0.0.tgz#8a7744f2437f81f5ed3250ed9f1550de902fe54a"
   integrity sha512-CvdFfHkC95B4bBBk36hcEmvdR2awOdhhVUYH6S/zrVj3477zven/fJMYg7121h4T1xHZC+tetUpubpAhxwI7hQ==
@@ -6633,14 +6633,13 @@ gatsby-source-filesystem@^3.0.0-next.0:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
-gatsby-source-shopify-experimental@^1.11.3:
-  version "1.11.3"
-  resolved "https://registry.yarnpkg.com/gatsby-source-shopify-experimental/-/gatsby-source-shopify-experimental-1.11.3.tgz#f36cec12c0d478d0dd13b6fb37cb9845e56e7047"
-  integrity sha512-6+09jRSmYP+LU6It+Uo+hIgrAqZkMajIZCzF8ojoav49s7Rn1SzPd0p1bWjmIyj9CHy+rS35u98efhimEeXcEQ==
+gatsby-source-shopify-experimental@^1.11.5:
+  version "1.11.5"
+  resolved "https://registry.yarnpkg.com/gatsby-source-shopify-experimental/-/gatsby-source-shopify-experimental-1.11.5.tgz#cc5be9176ccf5dd2c9d903f4bcae9f1211b351e5"
+  integrity sha512-99C2rSPjHGozVvSQQ7AmlsMm91jB6oSCXaVPLWC+szUELJ0G0UOgQoCfdu+sVEWobv2pjzc+SOAMIMzkhRe/YA==
   dependencies:
     gatsby-node-helpers "^1.0.3"
     gatsby-source-filesystem "^2.10.0"
-    graphql-request "^3.4.0"
     node-fetch "^2.6.1"
     typescript "^4.1.3"
 
@@ -7201,15 +7200,6 @@ graphql-playground-middleware-express@^1.7.18:
   integrity sha512-PJLiCxLmN6Dp+dHGyHU92m9y3hB/RAkcUBWcqYl2fiP+EbpDDgNfElrsVzW60MhJe+LTV1PFqiInH2d3KNvlCQ==
   dependencies:
     graphql-playground-html "^1.6.29"
-
-graphql-request@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/graphql-request/-/graphql-request-3.4.0.tgz#3a400cd5511eb3c064b1873afb059196bbea9c2b"
-  integrity sha512-acrTzidSlwAj8wBNO7Q/UQHS8T+z5qRGquCQRv9J1InwR01BBWV9ObnoE+JS5nCCEj8wSGS0yrDXVDoRiKZuOg==
-  dependencies:
-    cross-fetch "^3.0.6"
-    extract-files "^9.0.0"
-    form-data "^3.0.0"
 
 graphql-subscriptions@^1.1.0:
   version "1.2.0"
