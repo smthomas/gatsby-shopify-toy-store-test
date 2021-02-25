@@ -278,7 +278,7 @@ const Product = ({ data: { product, suggestions } }) => {
 export default Product
 
 export const query = graphql`
-  query($id: String!, $productType: String!) {
+  query($id: String!) {
     product: shopifyProduct(id: { eq: $id }) {
       title
       description
