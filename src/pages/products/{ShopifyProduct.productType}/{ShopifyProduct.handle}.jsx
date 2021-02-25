@@ -22,7 +22,6 @@ import Layout from '../../../components/layout'
 import { StoreContext } from '../../../context/store-context'
 import AddToCart from '../../../components/add-to-cart'
 import formatPrice from '../../../utils/format-price'
-import ProductListing from '../../../components/product-listing'
 import SEO from '../../../components/seo'
 
 const Product = ({ data: { product, suggestions } }) => {
@@ -271,7 +270,6 @@ const Product = ({ data: { product, suggestions } }) => {
         <Heading as="h2" mb={8} fontSize="3xl" color={headingColor}>
           More Products
         </Heading>
-        <ProductListing products={suggestions} />
       </Container>
     </Layout>
   )
@@ -280,7 +278,7 @@ const Product = ({ data: { product, suggestions } }) => {
 export default Product
 
 export const query = graphql`
-  query($id: String!, $productType: String!) {
+  query($id: String!) {
     product: shopifyProduct(id: { eq: $id }) {
       title
       description
@@ -313,14 +311,6 @@ export const query = graphql`
         name
         values
         id
-      }
-    }
-    suggestions: allShopifyProduct(
-      limit: 3
-      filter: { productType: { eq: $productType }, id: { ne: $id } }
-    ) {
-      nodes {
-        ...ProductCard
       }
     }
   }
