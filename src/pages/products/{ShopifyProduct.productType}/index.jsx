@@ -25,6 +25,7 @@ export default ProductTypeIndex
 export const query = graphql`
   query($productType: String!) {
     products: allShopifyProduct(
+      limit: 100
       filter: { productType: { eq: $productType } }
       sort: { fields: publishedAt, order: ASC }
     ) {
