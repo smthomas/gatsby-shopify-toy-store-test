@@ -6462,7 +6462,7 @@ gatsby-link@^3.0.0-v3rc.1:
     "@types/reach__router" "^1.3.7"
     prop-types "^15.7.2"
 
-gatsby-node-helpers@^1.0.3:
+gatsby-node-helpers@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/gatsby-node-helpers/-/gatsby-node-helpers-1.2.1.tgz#9d21adcaa2e02baa67d4bdf16a3bb27a3a84d553"
   integrity sha512-fYNQhp7/3sBUkb9QR31CZm6XChN2A78npow/PNglx5U1Sv8Zmd07Io8Mc2K7UO2hUCCSuAmgkSqlqq71NupdQA==
@@ -6699,12 +6699,12 @@ gatsby-source-filesystem@^3.0.0-next.0:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
-gatsby-source-shopify-experimental@^1.11.12:
-  version "1.11.12"
-  resolved "https://registry.yarnpkg.com/gatsby-source-shopify-experimental/-/gatsby-source-shopify-experimental-1.11.12.tgz#2c3b6cc42240639e86ca5bc48649f43852b4a7bb"
-  integrity sha512-S/SJ7x4iGBjCQdVa3gFnpEF8genHy5DZXz9vAVo/RlPVicmwabvk+DjwroTUqJZPV8PI9spnyl9k570v4I0vtw==
+gatsby-source-shopify-experimental@^1.11.13:
+  version "1.11.13"
+  resolved "https://registry.yarnpkg.com/gatsby-source-shopify-experimental/-/gatsby-source-shopify-experimental-1.11.13.tgz#05a7b5170a3d11c0c613274caebc08360e75cf46"
+  integrity sha512-4QwBpOxVQ6DHCDibKE5B3aCj9+cj/55a7WzHQ/lqaPohW8k93VkXL1Vh2UXttw5YCu2BOTRDgTBI1+goMu5jvA==
   dependencies:
-    gatsby-node-helpers "^1.0.3"
+    gatsby-node-helpers "^1.2.1"
     gatsby-source-filesystem "^2.10.0"
     node-fetch "^2.6.1"
     typescript "^4.1.3"
