@@ -6699,10 +6699,10 @@ gatsby-source-filesystem@^3.0.0-next.0:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
-gatsby-source-shopify-experimental@^1.11.11:
-  version "1.11.11"
-  resolved "https://registry.yarnpkg.com/gatsby-source-shopify-experimental/-/gatsby-source-shopify-experimental-1.11.11.tgz#8737104aa40ae87cc706060b47ecb75a87f8e550"
-  integrity sha512-CXntYV2iayu653xUJ5WJbf9I5o6LDzc36JPdkt0CxknKvVmOUPkphWBTLagi7wcxN0q47pRJBAsLSuUjdjFmMg==
+gatsby-source-shopify-experimental@^1.11.12:
+  version "1.11.12"
+  resolved "https://registry.yarnpkg.com/gatsby-source-shopify-experimental/-/gatsby-source-shopify-experimental-1.11.12.tgz#2c3b6cc42240639e86ca5bc48649f43852b4a7bb"
+  integrity sha512-S/SJ7x4iGBjCQdVa3gFnpEF8genHy5DZXz9vAVo/RlPVicmwabvk+DjwroTUqJZPV8PI9spnyl9k570v4I0vtw==
   dependencies:
     gatsby-node-helpers "^1.0.3"
     gatsby-source-filesystem "^2.10.0"
