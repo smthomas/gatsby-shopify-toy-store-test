@@ -3826,7 +3826,7 @@ camel-case@4.1.1:
     pascal-case "^3.1.1"
     tslib "^1.10.0"
 
-camel-case@4.1.2, camel-case@^4.1.2:
+camel-case@4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/camel-case/-/camel-case-4.1.2.tgz#9728072a954f805228225a6deea6b38461e1bd5a"
   integrity sha512-gxGWBrTT1JuMx6R+o5PTXMmUnhnVzLQ9SNutD4YqKtI6ap897t3tKECYla6gCWEkplXnlNybEkZg9GEGxKFCgw==
@@ -6462,14 +6462,6 @@ gatsby-link@^3.0.0-v3rc.1:
     "@types/reach__router" "^1.3.7"
     prop-types "^15.7.2"
 
-gatsby-node-helpers@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/gatsby-node-helpers/-/gatsby-node-helpers-1.2.1.tgz#9d21adcaa2e02baa67d4bdf16a3bb27a3a84d553"
-  integrity sha512-fYNQhp7/3sBUkb9QR31CZm6XChN2A78npow/PNglx5U1Sv8Zmd07Io8Mc2K7UO2hUCCSuAmgkSqlqq71NupdQA==
-  dependencies:
-    camel-case "^4.1.2"
-    pascal-case "^3.1.2"
-
 gatsby-page-utils@^1.0.0-v3rc.0:
   version "1.0.0-v3rc.0"
   resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-1.0.0-v3rc.0.tgz#fd3a47dfafac5c33f8146883a1a76101c088c2a5"
@@ -6699,15 +6691,13 @@ gatsby-source-filesystem@^3.0.0-next.0:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
-gatsby-source-shopify-experimental@^1.11.13:
-  version "1.11.13"
-  resolved "https://registry.yarnpkg.com/gatsby-source-shopify-experimental/-/gatsby-source-shopify-experimental-1.11.13.tgz#05a7b5170a3d11c0c613274caebc08360e75cf46"
-  integrity sha512-4QwBpOxVQ6DHCDibKE5B3aCj9+cj/55a7WzHQ/lqaPohW8k93VkXL1Vh2UXttw5YCu2BOTRDgTBI1+goMu5jvA==
+gatsby-source-shopify-experimental@^1.13.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-shopify-experimental/-/gatsby-source-shopify-experimental-1.13.0.tgz#4ac26ca4f86ad638d9fb3d11f91e8c0d4188065b"
+  integrity sha512-bH7wJz3cGq2BfKaAIZobnAmtIAQkWaxFf/inlcRUr76GY5Xn2IoR1jNVz6Dc3ITkPxn5Y8v8zO8uO7fbVPee5w==
   dependencies:
-    gatsby-node-helpers "^1.2.1"
     gatsby-source-filesystem "^2.10.0"
     node-fetch "^2.6.1"
-    typescript "^4.1.3"
 
 gatsby-telemetry@^2.0.0-v3rc.0:
   version "2.0.0-v3rc.0"
@@ -13095,11 +13085,6 @@ typedarray-to-buffer@^3.1.5:
   integrity sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
   dependencies:
     is-typedarray "^1.0.0"
-
-typescript@^4.1.3:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.2.tgz#1450f020618f872db0ea17317d16d8da8ddb8c4c"
-  integrity sha512-tbb+NVrLfnsJy3M59lsDgrzWIflR4d4TIUjz+heUnHZwdF7YsrMTKoRERiIvI2lvBG95dfpLxB21WZhys1bgaQ==
 
 unbzip2-stream@^1.0.9:
   version "1.4.3"
