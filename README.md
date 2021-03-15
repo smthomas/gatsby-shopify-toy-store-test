@@ -1,3 +1,7 @@
+## THIS IS ONLY A TEST
+
+Don't merge this PR. We just want to trigger a clean branch build and see if the operation cancellation works.
+
 <p align="center">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
