@@ -6412,23 +6412,24 @@ gatsby-cli@^3.0.0-v3rc.1:
     yoga-layout-prebuilt "^1.9.6"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^1.10.1:
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.10.1.tgz#97bed40df3fa79800e7ce0c0491680f0aadd6ce7"
-  integrity sha512-4P3feGCJckg+DRWWl2beFk7N9c63zmCryEGPaU1OHCp+ZT2bO0ihCBuXywDWuuEp6SYP9PZ1fs0YJ/Rt6q6lag==
+gatsby-core-utils@^2.0.0-v3rc.0:
+  version "2.0.0-v3rc.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.0.0-v3rc.0.tgz#782d409a696d9a410be0d465ef07a1fafba83f2a"
+  integrity sha512-XOLBW1YHRh2L2ra3Es9kexvAW5nPWhyI28x9gLo7K8xRi9b8TIgN4Wp6oE8i4fs20PD/JO3Vlij/KfW+Kb4WKw==
   dependencies:
     ci-info "2.0.0"
     configstore "^5.0.1"
+    file-type "^16.2.0"
     fs-extra "^8.1.0"
     node-object-hash "^2.0.0"
     proper-lockfile "^4.1.1"
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^2.0.0-v3rc.0:
-  version "2.0.0-v3rc.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.0.0-v3rc.0.tgz#782d409a696d9a410be0d465ef07a1fafba83f2a"
-  integrity sha512-XOLBW1YHRh2L2ra3Es9kexvAW5nPWhyI28x9gLo7K8xRi9b8TIgN4Wp6oE8i4fs20PD/JO3Vlij/KfW+Kb4WKw==
+gatsby-core-utils@^2.1.0, gatsby-core-utils@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.2.0.tgz#def804d0fc2acde605c5d4da3c1ffbfc9aaf4e2a"
+  integrity sha512-7T6aVJAj0u/VUg+zKOLuxyZLS/8KDQcDeEFCkKY0d7Pd4wV/QqKRLljr0TRVkivRZHXyWQI9fM3ox5DzfkHdCQ==
   dependencies:
     ci-info "2.0.0"
     configstore "^5.0.1"
@@ -6653,25 +6654,6 @@ gatsby-recipes@^0.11.0-v3rc.0:
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
 
-gatsby-source-filesystem@^2.10.0:
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.11.1.tgz#c90f49c096c4bdafd8e68462966b3a6e21fd746b"
-  integrity sha512-Ao526Mmhm8KkF+0Tvf9Le5kKnqX7kgC1wecp82BW2KLQgdtG7UIgmHvG6PkjuFNiJ2ghXPC3vRK3J/vDPyLtkA==
-  dependencies:
-    "@babel/runtime" "^7.12.5"
-    better-queue "^3.8.10"
-    chokidar "^3.4.3"
-    file-type "^16.0.0"
-    fs-extra "^8.1.0"
-    gatsby-core-utils "^1.10.1"
-    got "^9.6.0"
-    md5-file "^5.0.0"
-    mime "^2.4.6"
-    pretty-bytes "^5.4.1"
-    progress "^2.0.3"
-    valid-url "^1.0.9"
-    xstate "^4.14.0"
-
 gatsby-source-filesystem@^3.0.0-next.0:
   version "3.0.0-v3rc.0"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-3.0.0-v3rc.0.tgz#c99d11d3f1242b27b2cd787039b2289ba603cf06"
@@ -6691,13 +6673,35 @@ gatsby-source-filesystem@^3.0.0-next.0:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
-gatsby-source-shopify-experimental@^1.13.3:
-  version "1.13.3"
-  resolved "https://registry.yarnpkg.com/gatsby-source-shopify-experimental/-/gatsby-source-shopify-experimental-1.13.3.tgz#6e0b92751372230ffc157f6e765d8ee59ff8f47b"
-  integrity sha512-bND/CUc6ZrnQnVL1xLOit8qMzGbHpA/Tkhj7Ib5+83mykFCK8nDpbYwdEmYChQz+sGH0I6ME0W48Ols0AT11uQ==
+gatsby-source-filesystem@^3.1.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-3.2.0.tgz#1ceec22a068b235a084b15fb426898ef213fe995"
+  integrity sha512-5CAMdSiasWCciJEneIU1RgS9IcHrTwl8i7xqPxhE9ihBa+Y1RSEX3FdtNGnK3Z5dYQVHMwR0NNOPJ3WZW0rJQQ==
   dependencies:
-    gatsby-source-filesystem "^2.10.0"
+    "@babel/runtime" "^7.12.5"
+    better-queue "^3.8.10"
+    chokidar "^3.4.3"
+    file-type "^16.0.0"
+    fs-extra "^8.1.0"
+    gatsby-core-utils "^2.2.0"
+    got "^9.6.0"
+    md5-file "^5.0.0"
+    mime "^2.4.6"
+    pretty-bytes "^5.4.1"
+    progress "^2.0.3"
+    valid-url "^1.0.9"
+    xstate "^4.14.0"
+
+gatsby-source-shopify@^5.0.0-rc.18:
+  version "5.0.0-rc.18"
+  resolved "https://registry.yarnpkg.com/gatsby-source-shopify/-/gatsby-source-shopify-5.0.0-rc.18.tgz#60e5daaa2b92890cef3e4c64f8b3463ae1ea9cba"
+  integrity sha512-jtS2gteLTuSwgk6nk7kkiAYlWQKD/1Ryi1dqo/TG4SS0c2DiErVc/nqSM/RTBRW8MvjVBSZjTs8jgUmps2s6MA==
+  dependencies:
+    gatsby-core-utils "^2.1.0"
+    gatsby-source-filesystem "^3.1.0"
     node-fetch "^2.6.1"
+    sharp "^0.27.2"
+    shift-left "^0.1.5"
 
 gatsby-telemetry@^2.0.0-v3rc.0:
   version "2.0.0-v3rc.0"
@@ -11909,7 +11913,7 @@ shallowequal@^1.1.0:
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
-sharp@^0.27.0:
+sharp@^0.27.0, sharp@^0.27.2:
   version "0.27.2"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.27.2.tgz#a939775e630e88600c0b5e68f20593aea722252f"
   integrity sha512-w3FVoONPG/x5MXCc3wsjOS+b9h3CI60qkus6EPQU4dkT0BDm0PyGhDCK6KhtfT3/vbeOMOXAKFNSw+I3QGWkMA==
@@ -11953,6 +11957,11 @@ shell-quote@1.7.2:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
   integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
+
+shift-left@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/shift-left/-/shift-left-0.1.5.tgz#4a61a9d0412b1b32f9abbd97f72466c9c74a6be1"
+  integrity sha512-55d8QaP1YmuL1D52fhgq8CT1tXksM/2WPZ6980RtkMbl0Cze++kuJy50GLMnXwostk/YG9hasaJmP3r+d3yUtQ==
 
 shopify-buy@^2.11.0:
   version "2.11.0"
